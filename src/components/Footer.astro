@@ -1,0 +1,19 @@
+---
+import Copyright from '../components/icons/Copyright.astro'
+---
+
+<footer class="p-4  ">
+ <p class="copy w-full flex items-center gap-2 dark:text-white">
+  <Copyright class="size-4"/>  
+</p> 
+</footer>
+
+<script>
+  const date = new Date();
+  const year = date.getFullYear()
+  const p = document.querySelector('p.copy');
+  const span = document.createElement('span');
+  span.innerHTML = year.toString();
+  p?.appendChild(span)
+</script>
+

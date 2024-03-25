@@ -1,0 +1,77 @@
+---
+import Section from "./Section.astro";
+
+---
+<Section id="contact" title="Contacto">
+  <div class="rounded-xl border-2 border-gray-500 lg:w-1/2 lg:mx-auto lg:flex lg:justify-between p-4">
+
+    <form name="contacto" class="lg:w-1/2">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm lg:text-lg font-bold mb-2" for="name">
+          Nombre
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight dark:bg-gray-900 dark:border-gray-700"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Introduce tu nombre"
+          required
+        />
+        <span class="text-red-500 text-xs italic mt-1" id="name-error"></span>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm lg:text-lg font-bold mb-2" for="email">
+          Correo electrónico
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight dark:bg-gray-900 dark:border-gray-700"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Introduce tu correo electrónico"
+          required
+        />
+        <span class="text-red-500 text-xs italic mt-1" id="email-error"></span>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm lg:text-lg font-bold mb-2" for="email">
+          Asunto
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight dark:bg-gray-900 dark:border-gray-700"
+          id="subject"
+          type="text"
+          name="subject"
+          placeholder="Introduce el asunto de tu mensaje"
+          required
+        />
+        <span class="text-red-500 text-xs italic mt-1" id="subject-error"></span>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm lg:text-lg font-bold mb-2" for="message">
+          Mensaje
+        </label>
+        <textarea
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight dark:bg-gray-900 dark:border-gray-700"
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Introduce tu mensaje"
+          required
+        />
+        <span class="text-red-500 text-xs italic mt-1" id="message-error"></span>
+      </div>
+      <button
+        class="bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="submit"
+      >
+        Enviar
+      </button>
+    </form>
+    <div>
+    </div>
+    </div>
+  
+</Section>
+
